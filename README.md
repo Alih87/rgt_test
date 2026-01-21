@@ -54,7 +54,8 @@ Implemented a FAST API backend that:
 
 2. Install Visual Studio Code and MSVC compiler. Guide: https://code.visualstudio.com/docs/cpp/config-msvc
 
-3. In the `lib_mgmt_sys` directory run the following command to install python dependancies ```bash
+3. In the `lib_mgmt_sys` directory run the following command to install python dependancies 
+```bash
    pip install -r requirements.txt
 
 4. Make sure to add `/std:c++17` inside `.vscode/task.json` args list.
