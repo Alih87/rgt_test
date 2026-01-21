@@ -1,5 +1,6 @@
 /logs/
 /.vscode/
+__pycache__/
 *.pdb
 *.ilk
 *.obj
