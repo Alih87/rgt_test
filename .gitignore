@@ -1,8 +1,10 @@
 /logs/
 /.vscode/
+__pycache__/
 *.pdb
 *.ilk
 *.obj
 *.exe
 *.log
 *.tmp
+*.pyc
