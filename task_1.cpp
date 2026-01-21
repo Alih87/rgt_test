@@ -116,10 +116,17 @@ int main() {
     logManager->writeLog("app.log", "This is a test log entry with time!");
     logManager->writeLog("app1.log", "This is ANOTHER test log entry with time!");
     logManager->closeLogFile("app.log");
-    // std::vector<std::string> logs = logManager->readLogs("app1.log");
-    // for (const auto& log : logs) {
-    //      std::cout << log << std::endl;
-    // }
+    logManager->closeLogFile("app.log");
+
+    std::vector<std::string> logs = logManager->readLogs("app1.log");
+    for (const auto& log : logs) {
+         std::cout << log << std::endl;
+    }
+
+    std::vector<std::string> logs1 = logManager->readLogs("app.log");
+    for (const auto& log : logs1) {
+         std::cout << log << std::endl;
+    }
 
     return 0;
 }
